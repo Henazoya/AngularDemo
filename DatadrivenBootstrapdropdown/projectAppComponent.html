@@ -1,0 +1,14 @@
+
+
+<li>
+  <input type="search" ng-model="searchText" placeholder="Search" class="nav">
+  <ul  class="list-group project" ng-repeat="project in vm.projects | filter:searchText" >
+    <li class="list-group-item active">{{project.name}}</li>
+    <div class="group" ng-repeat="group in project.groups | filter:searchText">
+      <a href="#" ng-bind-html="group.name | highlightWord : searchText"></a>
+    </div>
+  </ul>
+</li>
+
+    
+         
