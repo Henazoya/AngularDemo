@@ -1,0 +1,16 @@
+/* Styles go here */
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.github-img {
+  padding: 120px 80px;
+}

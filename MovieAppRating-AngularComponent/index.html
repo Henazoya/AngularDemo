@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="moviesApp">
+
+<head>
+  <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script data-require="angular.js@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+  <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script data-require="angular-route@*" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="moviesApp.js"></script>
+  <script src="moviesApp.component.js"></script>
+  <script src="movie-rating.component.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar navbar-inverse">
+      <div class="navbar-header">
+        <div class="navbar-brand">At the movies</div>
+      </div>
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#!/home">Home <span class="glyphicon glyphicon-home"></span>
+            </a>
+        </li>
+        <li>
+          <a href="#!/about">About <span class="glyphicon glyphicon-king"></span>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <ng-view></ng-view>
+    
+  </div>
+</body>
+
+</html>
